@@ -23,7 +23,7 @@ You can use it to:
 
 You need:
 * ATMEGA64
-* FT232RL
+* CH340G
 * 60-pin edge socket
 * Printed circuit board, you can order one using files it "board" or "board2" folders.
 * Some capacitors
@@ -49,8 +49,6 @@ You can program it using command like "**make program PROGRAMMER_TYPE=avrisp2 PR
 Connect device to USB and PC will detect it as virtual serial port. First 8 seconds after power up bootloader is active (all leds are on), so you can program main firmware.
 
 You can use command "**make program PROGRAMMER_PORT=COM10**" to program main firmware. Replace *COM10* with port assigned to your dumper (you can use Windows device manager to see it).
-
-Also it's recommended to reprogram FT232 chip using [FT_PROG util](http://www.ftdichip.com/Support/Utilities.htm#FT_PROG) to change device name to "Famicom Dumper/Programmer", so it can be detected automatically by software.
 
 That's all! You can use it now.
 
